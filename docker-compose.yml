@@ -1,13 +1,13 @@
 services:
   backend:
-    build: ./krcsboard
+    build: ./krcs
     container_name: krcs_backend
     volumes:
-      - ./krcsboard:/app
+      - ./krcs:/app
     ports:
       - "8000:8000"
     env_file:
-      - ./krcsboard/.env
+      - ./krcs/.env
     depends_on:
       - db
 
@@ -28,6 +28,6 @@ services:
       POSTGRES_USER: ${DB_USER}
       POSTGRES_PASSWORD: ${DB_PASSWORD}
     volumes:
-    - postgres_data:/var/lib/postgresql/data/
+      - postgres_data:/var/lib/postgresql/data/
 volumes:
   postgres_data:
