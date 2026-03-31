@@ -4,3 +4,6 @@
 [submodule "krcs"]
 	path = krcs
 	url = https://github.com/joshua20/-krcsdashboard
+[submodule "kcrsboard"]
+	path = kcrsboard
+	url = https://github.com/joshua20/-krcsdashboard.git

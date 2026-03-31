@@ -1,13 +1,13 @@
 services:
   backend:
-    build: ./krcs
+    build: ./krcsboard
     container_name: krcs_backend
     volumes:
-      - ./krcs:/app
+      - ./krcsboard:/app
     ports:
       - "8000:8000"
     env_file:
-      - ./krcs/.env
+      - ./krcsboard/.env
     depends_on:
       - db
 
