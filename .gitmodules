@@ -1,0 +1,6 @@
+[submodule "IFSL-dashboard"]
+	path = IFSL-dashboard
+	url = https://github.com/john-ngugi/IFSL-dashboard
+[submodule "krcs"]
+	path = krcs
+	url = https://github.com/joshua20/-krcsdashboard
